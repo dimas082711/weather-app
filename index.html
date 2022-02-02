@@ -14,20 +14,35 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-      
-      <header class="container-fluid">
-        <div class="row">
-            <h1 class="col text-center p-4 ">Weather Dashboard</h1>
-        </div>
-      </header>
-    <div class="col-12 col-md-4">
+    <header class="container-fluid bg-info">
+      <div class="row">
+        <h1 class="col text-center p-4">Weather Dashboard</h1>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row justify-content-around">  
+      <aside class="col col-3 m-2">
         <div class="search">
-            <h3 class="card-header text-uppercase">Search For City</h3>
-            <form id="user-form" class="p-5">
-                <input type="text" id="city" placeholder="Search By City"/>
-                <button type="submit" id="search-btn" class="btn btn-secondary">Search</button>
-            </form>
+          <h3 class=" text-center">Search For City</h3>
+          <form id="city-form" class="">
+            <input type="text" id="city" placeholder="Search By City" />
+            <button type="submit" id="search-btn" class="btn  btn-secondary mx-auto col">
+              Search
+            </button>
+          </form>
+          <div id="search-history"></div>
         </div>
+      </aside>
+
+      <main class="col col-8 m-2">
+        <h2>current city delete this later</h2>
+        <div id="current-weather"></div>
+
+        <h2>5 Day Forecast</h2>
+        <div id="five-day-forecast" class="row justify-content-around"></div>
+      </main>
+    </div>
     </div>
 
     <script src="./assets/js/script.js"></script>
