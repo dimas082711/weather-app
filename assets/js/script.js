@@ -117,7 +117,7 @@ var fetchWeather = function () {
         currentUVIndex
       );
 
-      for (var i = 1; i < 6; i++) {
+      for (var i = 0; i < 5; i++) {
         var fiveDayDiv = document.createElement("div");
         fiveDayDiv.setAttribute("id", "five-day-div" + [i]);
         fiveDayDiv.classList.add("col-2", "bg-primary", "text-light", "m-2");
